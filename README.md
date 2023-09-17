@@ -10,5 +10,5 @@ Pretty Basic Programming thing to do in my honest opinion.
 
 
 ## References:
-- [Netpbm image format](https://netpbm.sourceforge.net/doc/)
+- [Netpbm image format](https://my.eng.utah.edu/~cs5610/ppm.html)
 - [Definition from Wolfram MathWorld](https://mathworld.wolfram.com/Fractal.html)
