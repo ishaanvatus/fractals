@@ -1,8 +1,7 @@
-#define HEIGHT 1080
-#define WIDTH 1920
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
+#include "scrimage.h"
 
 void fill(uint32_t *pixels, size_t height, size_t width, uint32_t color)
 {
