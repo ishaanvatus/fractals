@@ -12,4 +12,5 @@ typedef struct
 void fill(Canvas image, uint32_t color);
 int save(Canvas image, char *filename);
 void bresenham(Canvas image, uint32_t color, Pixel p0, Pixel p1);
+void rectangle(Canvas image, uint32_t color, Pixel p, int w, int h);
 #endif

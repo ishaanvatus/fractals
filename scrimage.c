@@ -50,3 +50,16 @@ void bresenham(Canvas image, uint32_t color, Pixel p0, Pixel p1)
 				}
 		}
 }
+void rectangle(Canvas image, uint32_t color, Pixel p0, int w, int h)
+{
+		Pixel pen = p0;
+		for (int dy = 0; dy < h; dy++) {
+				pen.y = p0.y + dy;
+				if (pen.y < 0 || pen.y > HEIGHT) break;
+				for (int dx = 0; dx < w; dx++) {
+						pen.x = p0.x + dx;
+						if (pen.x < 0 || pen.x > WIDTH) break;
+						image[pen.y*WIDTH + pen.x] = color;
+				}
+		}
+}
