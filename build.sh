@@ -1,3 +1,3 @@
 #!/bin/bash
 
-gcc -O3 -Wall -Wextra scrimage.c main.c
+gcc -O3 -Wall -Wextra scrimage.c main.c -o main

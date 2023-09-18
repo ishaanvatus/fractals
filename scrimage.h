@@ -2,6 +2,14 @@
 #define _SCRIMAGE_H_
 #define WIDTH 1920
 #define HEIGHT 1080
-void fill(uint32_t *pixels, size_t height, size_t width, uint32_t color);
-int save(uint32_t *pixels, size_t height, size_t width, char *filename);
+typedef uint32_t Canvas[HEIGHT*WIDTH];
+typedef struct
+{
+		int x;
+		int y;
+} Pixel;
+//void set_pixel(Canvas image, uint32_t color, Pixel p);
+void fill(Canvas image, uint32_t color);
+int save(Canvas image, char *filename);
+void bresenham(Canvas image, uint32_t color, Pixel p0, Pixel p1);
 #endif
