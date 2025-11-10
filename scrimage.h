@@ -4,8 +4,8 @@
 #include "scrimage.h"
 #include <stdio.h>
 
-#define WIDTH 1920
-#define HEIGHT 1080
+#define WIDTH 3200
+#define HEIGHT 2400
 
 typedef struct
 {
