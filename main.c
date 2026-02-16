@@ -11,12 +11,12 @@ int main(int argc, char *argv[])
     int padding = atoi(argv[2]);
 	pixel bg = {255, 255, 255};
 	pixel fg = {0, 0, 0};
-	//point p0 = {0, HEIGHT - 1};
-	//point p1 = {WIDTH/2, 0};
-	//point p2 = {WIDTH - 1, HEIGHT - 1};
-	point p0 = {rand()%(WIDTH - padding), rand()%(HEIGHT - padding)};
-	point p1 = {rand()%(WIDTH - padding), rand()%(HEIGHT - padding)};
-	point p2 = {rand()%(WIDTH - padding), rand()%(HEIGHT - padding)};
+	point p0 = {padding, HEIGHT - padding - 1};
+	point p1 = {WIDTH/2 - padding, padding};
+	point p2 = {WIDTH - padding - 1, HEIGHT - padding - 1};
+	//point p0 = {rand()%(WIDTH - padding), rand()%(HEIGHT - padding)};
+	//point p1 = {rand()%(WIDTH - padding), rand()%(HEIGHT - padding)};
+	//point p2 = {rand()%(WIDTH - padding), rand()%(HEIGHT - padding)};
 	fill_image(image, bg);
 	int order = atoi(argv[1]);
 	sierpinski_triangle(image, order, p0, p1, p2, fg);
